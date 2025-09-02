@@ -1,0 +1,24 @@
+
+:root{--bg:#f3f4f6;--text:#0f172a;--muted:#475569;--card:#fff}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Georgia,'Times New Roman',serif}
+.container{max-width:1120px;margin:0 auto;padding:0 20px}
+header{display:flex;align-items:center;justify-content:space-between;padding:16px 0;border-bottom:1px solid #e2e8f0;background:rgba(243,244,246,.92);position:sticky;top:0;z-index:10}
+.brand{display:flex;gap:12px;align-items:center;font-weight:700;letter-spacing:.06em}
+.brand img{height:38px;width:auto;background:#f3f4f6;border-radius:6px}
+.menu{display:flex;gap:20px}
+.menu a{text-decoration:none;color:var(--muted);font-weight:600}
+.lang button{border:1px solid #cbd5e1;background:#fff;padding:6px 10px;border-radius:8px;cursor:pointer}
+.lang button.active{background:#111827;color:#fff;border-color:#111827}
+h1,h2{letter-spacing:.05em}
+h1{font-size:42px;margin:20px 0 14px}
+h2{font-size:28px;margin:20px 0 14px}
+.hero{padding:40px 0}
+.cta{display:inline-block;margin-top:18px;background:#2563eb;color:#fff;padding:12px 18px;border-radius:8px;text-decoration:none;font-weight:700}
+.ornament{height:16px;margin:24px 0;background-image:url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'120\' height=\'16\' viewBox=\'0 0 120 16\'><rect width=\'120\' height=\'16\' fill=\'%23ffffff\'/><path d=\'M0 8 8 0 16 8 8 16Z M16 8 24 0 32 8 24 16Z M32 8 40 0 48 8 40 16Z M48 8 56 0 64 8 56 16Z M64 8 72 0 80 8 72 16Z M80 8 88 0 96 8 88 16Z M96 8 104 0 112 8 104 16Z\' fill=\'%23d90429\'/></svg>');background-repeat:repeat-x;background-size:120px 16px;border-radius:2px}
+.section{padding:40px 0}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+.card{background:var(--card);padding:18px;border-radius:12px;border:1px solid #e2e8f0}
+.partners-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:20px;align-items:center;justify-items:center;margin-top:20px}
+.partners-grid img{max-height:54px;object-fit:contain}
+.footer{padding:24px 0;color:var(--muted);font-size:14px;border-top:1px solid #e2e8f0;margin-top:40px}

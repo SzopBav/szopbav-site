@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Szop B.A.V. — Wholesale & Logistics</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="container">
+  <div class="brand">
+    <img src="img/szopbav-logo.png" alt="Szop B.A.V. logo">
+    <strong>SZOP B.A.V.</strong>
+  </div>
+  <nav class="menu">
+    <a href="#services" data-i18n="menu_services">Services</a>
+    <a href="#why" data-i18n="menu_why">Why us</a>
+    <a href="#contacts" data-i18n="menu_contacts">Contacts</a>
+  </nav>
+  <div class="lang">
+    <button id="btn-en" class="active">EN</button>
+    <button id="btn-ru">RU</button>
+  </div>
+</header>
+
+<div class="ornament"></div>
+
+<main class="container">
+  <section class="hero">
+    <h1 data-i18n="hero_title">Wholesale and Logistics Solutions</h1>
+    <p data-i18n="hero_sub">Building distribution, optimizing logistics, ensuring payments and deal flow.</p>
+    <a href="#contacts" class="cta" data-i18n="cta">Start cooperation</a>
+  </section>
+
+  <section id="services" class="section">
+    <h2 data-i18n="services_title">Our Services</h2>
+    <div class="cards">
+      <div class="card"><h3 data-i18n="s1_title">Wholesale assortment & payment solutions</h3><p data-i18n="s1_text">Selection of assortment, terms and payment models for your market.</p></div>
+      <div class="card"><h3 data-i18n="s2_title">Distribution & logistics</h3><p data-i18n="s2_text">Supply chain design, transport, customs and storage.</p></div>
+      <div class="card"><h3 data-i18n="s3_title">Consulting & deal support</h3><p data-i18n="s3_text">Negotiations, contracts, quality control and long-term management.</p></div>
+    </div>
+  </section>
+
+  <section id="partners" class="section">
+    <h2 data-i18n="partners_title">Our Partners</h2>
+    <div class="partners-grid">
+      <img src="img/partner-rodriguez.png" alt="Rodriguez Jamones">
+      <img src="img/partner-wykefarms.jpg" alt="Wyke Farms">
+      <img src="img/partner-fiorucci.png" alt="Fiorucci Foods">
+      <img src="img/partner-elpozo.png" alt="ElPozo">
+    </div>
+    <p style="margin-top:10px;color:#475569" data-i18n="partners_note">Logos are used for reference to illustrate cooperation capabilities.</p>
+  </section>
+
+  <section id="why" class="section">
+    <h2 data-i18n="why_title">Why us</h2>
+    <p data-i18n="why_text">We work officially with transparent processes, documentation and compliance. Focus on B2B supply and long-term relations.</p>
+  </section>
+
+  <section id="contacts" class="section">
+    <h2 data-i18n="contacts_title">Contacts</h2>
+    <div class="cards">
+      <div class="card"><strong>Email:</strong> <a href="mailto:info@szopbav.com">info@szopbav.com</a></div>
+      <div class="card"><strong data-i18n="phone">Phone</strong>: +48 732 979 624</div>
+      <div class="card"><strong data-i18n="address">Address</strong>: Polska, Gdynia, ul. Starowiejska 16/2, 81-356</div>
+      <div class="card"><strong data-i18n="legal">Legal info</strong><br>Szop B.A.V.<br>NIP: 9581733742<br>REGON: 525313391</div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer container">
+  <div class="ornament"></div>
+  <p>© Szop B.A.V., 2025 — <span data-i18n="footer_text">Made with care. Belarusian ornament details in red & white.</span></p>
+</footer>
+
+<script>
+const dict = {
+  en:{menu_services:"Services",menu_why:"Why us",menu_contacts:"Contacts",
+      hero_title:"Wholesale and Logistics Solutions",hero_sub:"Building distribution, optimizing logistics, ensuring payments and deal flow.",
+      cta:"Start cooperation",services_title:"Our Services",
+      s1_title:"Wholesale assortment & payment solutions",s1_text:"Selection of assortment, terms and payment models for your market.",
+      s2_title:"Distribution & logistics",s2_text:"Supply chain design, transport, customs and storage.",
+      s3_title:"Consulting & deal support",s3_text:"Negotiations, contracts, quality control and long-term management.",
+      partners_title:"Our Partners",partners_note:"Logos are used for reference to illustrate cooperation capabilities.",
+      why_title:"Why us",why_text:"We work officially with transparent processes, documentation and compliance. Focus on B2B supply and long-term relations.",
+      contacts_title:"Contacts",phone:"Phone",address:"Address",legal:"Legal info",
+      footer_text:"Made with care. Belarusian ornament details in red & white."},
+  ru:{menu_services:"Услуги",menu_why:"Почему мы",menu_contacts:"Контакты",
+      hero_title:"Оптовая торговля и логистические решения",hero_sub:"Построение дистрибуции, оптимизация логистики, обеспечение платежей и сопровождение сделок.",
+      cta:"Начать сотрудничество",services_title:"Наши услуги",
+      s1_title:"Оптовый ассортимент и платёжные решения",s1_text:"Подбор ассортимента, условий и моделей оплаты под ваш рынок.",
+      s2_title:"Дистрибуция и логистика",s2_text:"Проектирование цепочки поставок, транспорт, таможня и хранение.",
+      s3_title:"Консалтинг и сопровождение сделок",s3_text:"Переговоры, договоры, контроль качества и долгосрочное ведение.",
+      partners_title:"Наши партнёры",partners_note:"Логотипы используются для иллюстрации возможностей сотрудничества.",
+      why_title:"Почему мы",why_text:"Работаем официально: прозрачные процессы, документы и комплаенс. Фокус на B2B поставках и долгосрочных отношениях.",
+      contacts_title:"Контакты",phone:"Телефон",address:"Адрес",legal:"Юр. данные",
+      footer_text:"Сделано с заботой. Белорусский орнамент в красно-белом."}
+};
+function setLang(lang){
+  document.querySelectorAll('[data-i18n]').forEach(el=>{
+    const k=el.getAttribute('data-i18n');
+    if(dict[lang][k]) el.textContent=dict[lang][k];
+  });
+  document.getElementById('btn-en').classList.toggle('active',lang==='en');
+  document.getElementById('btn-ru').classList.toggle('active',lang==='ru');
+  localStorage.setItem('lang',lang);
+}
+document.getElementById('btn-en').onclick=()=>setLang('en');
+document.getElementById('btn-ru').onclick=()=>setLang('ru');
+setLang(localStorage.getItem('lang')||'en');
+</script>
+</body>
+</html>
