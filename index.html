@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SZOP B.A.V. — Wholesale & Logistics</title>
+  <meta name="description" content="SZOP B.A.V. — Wholesale and logistics solutions: distribution design, transport, customs, bonded storage, payments and deal support.">
+  <meta property="og:title" content="SZOP B.A.V. — Wholesale & Logistics">
+  <meta property="og:description" content="Wholesale assortment, distribution & logistics, consulting & deal support.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/logos/szop_logo.jpg">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Home">
+        <img src="assets/logos/szop_logo.jpg" alt="SZOP B.A.V. logo">
+        <div class="title">SZOP&nbsp;B.A.V.</div>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#services" data-i18n="nav_services">Services</a>
+        <a href="#why" data-i18n="nav_why">Why us</a>
+        <a href="#contacts" data-i18n="nav_contacts">Contacts</a>
+        <div class="lang-switch" role="group" aria-label="Language switcher">
+          <button type="button" data-lang="en" class="active">EN</button>
+          <button type="button" data-lang="ru">RU</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <h1 data-i18n="hero_title">Wholesale and Logistics Solutions</h1>
+          <p data-i18n="hero_sub">Building distribution, optimizing logistics, ensuring payments and deal flow.</p>
+          <div style="margin-top:18px">
+            <a id="cta" href="#contacts" class="btn" data-i18n="hero_cta">Start cooperation</a>
+          </div>
+          <div class="ornament" aria-hidden="true"></div>
+        </div>
+        <div>
+          <div class="card">
+            <strong>Szop B.A.V.</strong><br>
+            NIP: 9581733742 &nbsp; • &nbsp; REGON: 525313391<br>
+            Polska, Gdynia, ul. Starowiejska 16/2, 81-356
+          </div>
+          <div style="height:12px"></div>
+          <div class="card">
+            <div style="font-size:14px;color:var(--muted)">EN/RU ready • B2B focus • EU compliance.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="services">
+      <h2 data-i18n="services_title">Our Services</h2>
+      <div class="ornament" aria-hidden="true"></div>
+      <div class="card-grid">
+        <div class="card">
+          <h3 data-i18n="svc1_title">Wholesale assortment & payment solutions</h3>
+          <p data-i18n="svc1_text">Selection of assortment, terms and payment models.</p>
+        </div>
+        <div class="card">
+          <h3 data-i18n="svc2_title">Distribution & logistics</h3>
+          <p data-i18n="svc2_text">Supply chain design, transport, customs, bonded storage.</p>
+        </div>
+        <div class="card">
+          <h3 data-i18n="svc3_title">Consulting & deal support</h3>
+          <p data-i18n="svc3_text">Negotiations, contracts, quality control, long-term guidance.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="partners">
+      <h2 data-i18n="partners_title">Our Partners</h2>
+      <p class="lead" data-i18n="partners_note">Logos are used for reference to illustrate cooperation capabilities.</p>
+      <div class="partners">
+        <div class="partner"><img src="assets/logos/rodriguez.jpg" alt="Rodríguez Jamones"></div>
+        <div class="partner"><img src="assets/logos/wyke_farms.jpg" alt="Wyke Farms"></div>
+        <div class="partner"><img src="assets/logos/fiorucci.jpg" alt="Fiorucci Foods"></div>
+        <div class="partner"><img src="assets/logos/elpozo.jpg" alt="ElPozo"></div>
+      </div>
+    </section>
+
+    <section class="section container" id="why">
+      <h2 data-i18n="why_title">Why us</h2>
+      <div class="why">
+        <p data-i18n="why_text">We work officially with transparent processes, documentation and compliance. Focus on B2B supply and long-term relations.</p>
+      </div>
+    </section>
+
+    <section class="section container" id="contacts">
+      <h2 data-i18n="contacts_title">Contacts</h2>
+      <div class="contacts">
+        <div class="contact-card">
+          <p>
+            Email: <a href="mailto:info@szopbav.com">info@szopbav.com</a><br>
+            Phone: <a href="tel:+48732979624">+48 732 979 624</a><br>
+            Address: Polska, Gdynia, ul. Starowiejska 16/2, 81-356
+          </p>
+        </div>
+        <div class="contact-card">
+          <strong data-i18n="legal_label">Legal info</strong><br>
+          Szop B.A.V. — NIP: 9581733742 &nbsp; • &nbsp; REGON: 525313391
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    © <span id="year"></span> SZOP B.A.V.
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
