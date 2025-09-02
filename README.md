@@ -1,1 +1,2 @@
-Bilingual landing (EN/RU) for Szop B.A.V. Edit texts in the i18n dictionary at the bottom of index.html.
+# Szop B.A.V. site
+Static EN/RU landing. Edit texts inside index.html if needed.
