@@ -1,91 +1,57 @@
-<!doctype html><html lang="ru"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SzopBav — клининг для бизнеса</title>
-<meta name="description" content="Профессиональный клининг для магазинов, складов и офисов. Быстро, надёжно, по договору.">
-<link rel="preload" href="assets/logo.svg" as="image">
-<link rel="stylesheet" href="styles.css">
-</head><body>
-<header><div class="container header-inner">
-  <div style="display:flex;align-items:center;gap:12px">
-    <img src="assets/logo.svg" alt="SzopBav" height="36">
-    <span class="tag">Гдыня • Польша</span>
-  </div>
-  <nav>
-    <a href="#services">Услуги</a>
-    <a href="#why">Почему мы</a>
-    <a href="#contacts">Контакты</a>
-    <a class="btn" href="#contacts">Получить расчёт</a>
-  </nav>
-</div></header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Szop B.A.V.</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <img src="assets/logo.png" alt="Szop B.A.V. Logo" class="logo">
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#why-us">Why us</a>
+      <a href="#contacts">Contacts</a>
+    </nav>
+  </header>
 
-<main>
-<section class="hero container">
-  <span class="badge">✨ Новый сайт компании SzopBav</span>
-  <h1>Клининг для магазинов, складов и офисов — <span style="color:#93c5fd">чисто</span>, <span style="color:#86efac">быстро</span>, <span style="color:#fca5a5">без простоев</span>.</h1>
-  <p>Наводим порядок на объектах любого масштаба. Регулярное обслуживание, разовые выезды,
-     клининг после ремонта и открытий. Работаем официально, с актами и страхованием ответственности.</p>
-  <div class="section" id="services" style="padding-top:28px">
-    <div class="grid">
-      <div class="card"><h3>Магазины и витрины</h3><p>Открытие, ежедневная уборка, мойка витрин, полировка, санобработка.</p></div>
-      <div class="card"><h3>Склады и логистика</h3><p>Промышленная уборка, поломойные машины, разметка, пыль, тара.</p></div>
-      <div class="card"><h3>Офисы и коворкинги</h3><p>Регулярно по графику, расходники, контроль качества, чек-листы.</p></div>
-    </div>
-  </div>
-</section>
+  <main>
+    <section class="hero">
+      <h1>Wholesale Trade & Logistics Solutions</h1>
+      <p>Building distribution, optimizing logistics, securing deals.</p>
+      <a href="#contacts" class="cta">Start cooperation</a>
+    </section>
 
-<section class="section container" id="why">
-  <div class="kpis">
-    <div class="kpi"><div class="n">24/7</div><div>дежурные бригады</div></div>
-    <div class="kpi"><div class="n">60+</div><div>объектов в обслуживании</div></div>
-    <div class="kpi"><div class="n">15 мин</div><div>реакция на заявку</div></div>
-    <div class="kpi"><div class="n">ISO</div><div>процессы и ТБ</div></div>
-  </div>
-</section>
+    <section id="services">
+      <h2>Our Services</h2>
+      <ul>
+        <li>Wholesale assortment & payment solutions</li>
+        <li>Distribution & logistics</li>
+        <li>Consulting & deal support</li>
+      </ul>
+    </section>
 
-<section class="section container" id="contacts">
-  <div class="split">
-    <div>
-      <h2 style="margin:0 0 8px">Напишите, рассчитаем стоимость</h2>
-      <p class="muted">Укажите пару деталей — и мы вернёмся с точным предложением.</p>
-      <form id="contact" action="https://forms.office.com/Pages/ResponsePage.aspx" method="GET" onsubmit="return warnReplace();" novalidate>
-        <label>Как к вам обращаться</label>
-        <input name="name" placeholder="Иван / ООО «Пример»" required>
-        <label>Телефон или e‑mail</label>
-        <input name="contact" placeholder="+48 600 000 000 / info@example.com" required>
-        <label>Кратко о задаче</label>
-        <textarea name="message" rows="5" placeholder="Площадь, график, особенности объекта"></textarea>
-        <div style="display:flex;gap:12px;margin-top:12px">
-          <button class="btn" type="submit">Отправить</button>
-          <a class="btn secondary" href="mailto:info@szopbav.com">Написать на почту</a>
-        </div>
-        <small class="muted">Пока форма открывает Microsoft Forms. Позже подключим отправку на <strong>info@szopbav.com</strong>.</small>
-      </form>
-    </div>
-    <div class="card">
-      <h3>Контакты</h3><hr>
-      <p><strong>E‑mail:</strong> <a href="mailto:info@szopbav.com">info@szopbav.com</a><br>
-         <strong>Телефон:</strong> +48&nbsp;732&nbsp;879&nbsp;624<br>
-         <strong>Город:</strong> Gdynia, PL</p>
-      <p><strong>Юр. данные:</strong><br>SzopBav sp. z o.o.<br>NIP: 0000000000</p>
-    </div>
-  </div>
-</section>
-</main>
+    <section id="partners">
+      <h2>Our Partners</h2>
+      <div class="logos">
+        <img src="assets/partners/rodriguez.png" alt="Rodriguez">
+        <img src="assets/partners/veikfarms.png" alt="Veik Farms">
+        <img src="assets/partners/fiorucci.png" alt="Fiorucci">
+        <img src="assets/partners/elpozo.png" alt="ElPozo">
+      </div>
+    </section>
 
-<footer>
-  <div class="container" style="display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap">
-    <div style="display:flex;align-items:center;gap:10px">
-      <img src="assets/logo.svg" alt="" height="26">
-      <small class="muted">© SzopBav, 2025</small>
-    </div>
-    <small class="muted">Сделано с ❤ и порядком</small>
-  </div>
-</footer>
+    <section id="contacts">
+      <h2>Contacts</h2>
+      <p>Email: <a href="mailto:info@szopbav.com">info@szopbav.com</a></p>
+      <p>Phone: +48 732 979 624</p>
+      <p>Address: Poland, Gdynia, Starowiejska 16/2</p>
+    </section>
+  </main>
 
-<script>
-function warnReplace(){
-  alert('Форма откроется на Microsoft Forms. Когда у вас будет своя форма — замените адрес action в index.html');
-  return true;
-}
-</script>
-</body></html>
+  <footer>
+    <p>© Szop B.A.V. 2025</p>
+  </footer>
+</body>
+</html>
