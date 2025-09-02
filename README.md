@@ -1,1 +1,0 @@
-Bilingual landing (EN/RU) for Szop B.A.V. Edit texts in the i18n dictionary at the bottom of index.html.
