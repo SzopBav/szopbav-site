@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Szop B.A.V. — Wholesale & Logistics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="img/logo.png" alt="Szop B.A.V. logo" class="logo" />
+        <span class="brand-title">Szop B.A.V.</span>
+      </div>
+      <nav class="nav">
+        <a href="#services" data-i18n="nav_services">Services</a>
+        <a href="#why" data-i18n="nav_why">Why us</a>
+        <a href="#contacts" data-i18n="nav_contacts">Contacts</a>
+      </nav>
+      <div class="lang-switch">
+        <button id="lang-en" class="lang-btn active">EN</button>
+        <button id="lang-ru" class="lang-btn">RU</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1 data-i18n="hero_title">Wholesale and logistics solutions</h1>
+      <p class="lead" data-i18n="hero_sub">
+        Building distribution, optimizing logistics, ensuring payments and deal flow.
+      </p>
+      <a class="cta" href="#contacts" data-i18n="cta">Start cooperation</a>
+    </div>
+    <div class="ornament" aria-hidden="true"></div>
+  </section>
+
+  <section class="services" id="services">
+    <div class="container">
+      <h2 data-i18n="services_title">Our services</h2>
+      <div class="cards">
+        <div class="card">
+          <h3 data-i18n="s1_title">Wholesale assortment & payment solutions</h3>
+          <p data-i18n="s1_text">Selection of assortment, terms and payment models for your market.</p>
+        </div>
+        <div class="card">
+          <h3 data-i18n="s2_title">Distribution & logistics</h3>
+          <p data-i18n="s2_text">Supply chain design, transport, customs and storage.</p>
+        </div>
+        <div class="card">
+          <h3 data-i18n="s3_title">Consulting & deal support</h3>
+          <p data-i18n="s3_text">Negotiations, contracts, quality control and long‑term management.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="partners">
+    <div class="container">
+      <h2 data-i18n="partners_title">Our partners</h2>
+      <div class="logos">
+        <a class="logo-item" href="#" title="Rodriguez (ES)">
+          <img src="https://logo.clearbit.com/rodriguez.es" alt="Rodriguez logo" onerror="this.replaceWith(textSpan('Rodriguez'))">
+        </a>
+        <a class="logo-item" href="#" title="Wykes Farms (UK)">
+          <img src="https://logo.clearbit.com/wykesfarms.com" alt="Wykes Farms logo" onerror="this.replaceWith(textSpan('Wykes Farms'))">
+        </a>
+        <a class="logo-item" href="https://www.fioruccisalumi.it/" title="Fiorucci (IT)">
+          <img src="https://logo.clearbit.com/fioruccisalumi.it" alt="Fiorucci logo" onerror="this.replaceWith(textSpan('Fiorucci'))">
+        </a>
+        <a class="logo-item" href="https://www.elpozo.com/" title="ElPozo (ES)">
+          <img src="https://logo.clearbit.com/elpozo.com" alt="ElPozo logo" onerror="this.replaceWith(textSpan('ElPozo'))">
+        </a>
+      </div>
+      <p class="note" data-i18n="partners_note">Logos are used for reference to illustrate cooperation capabilities.</p>
+    </div>
+  </section>
+
+  <section class="why" id="why">
+    <div class="container why-grid">
+      <div class="why-item">
+        <div class="why-kpi">24/7</div>
+        <div class="why-text" data-i18n="kpi1">On‑call support</div>
+      </div>
+      <div class="why-item">
+        <div class="why-kpi">60+</div>
+        <div class="why-text" data-i18n="kpi2">Objects in service</div>
+      </div>
+      <div class="why-item">
+        <div class="why-kpi">15 min</div>
+        <div class="why-text" data-i18n="kpi3">Response time</div>
+      </div>
+      <div class="why-item">
+        <div class="why-kpi">ISO</div>
+        <div class="why-text" data-i18n="kpi4">Processes & safety</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contacts" id="contacts">
+    <div class="container contact-grid">
+      <form class="contact-form" name="contact" action="mailto:info@szopbav.com" method="post" enctype="text/plain">
+        <h2 data-i18n="contact_title">Write — we will calculate the cost</h2>
+        <label>
+          <span data-i18n="f_name">How to address you</span>
+          <input type="text" name="name" placeholder="Ivan / Company" required>
+        </label>
+        <label>
+          <span data-i18n="f_contact">Phone or e‑mail</span>
+          <input type="text" name="contact" placeholder="+48 600 000 000 / info@example.com" required>
+        </label>
+        <label>
+          <span data-i18n="f_task">Brief about the task</span>
+          <textarea name="task" rows="4" placeholder="Volume, schedule, object specifics"></textarea>
+        </label>
+        <button type="submit" class="cta" data-i18n="btn_send">Send</button>
+        <a class="cta ghost" href="mailto:info@szopbav.com" data-i18n="btn_email">Write to e‑mail</a>
+      </form>
+
+      <aside class="contact-info">
+        <h3 data-i18n="contacts_title">Contacts</h3>
+        <p><strong>E‑mail:</strong> <a href="mailto:info@szopbav.com">info@szopbav.com</a></p>
+        <p><strong data-i18n="phone">Phone:</strong> <a href="tel:+48732979624">+48 732 979 624</a></p>
+        <p><strong data-i18n="city">City:</strong> Gdynia, PL</p>
+        <p><strong data-i18n="jur">Legal details:</strong><br>SzopBav sp. z o.o.<br>NIP: 0000000000</p>
+        <p><strong>Address:</strong> Polska, Gdynia, ul. Starowiejska 16/2</p>
+      </aside>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© SzopBav, 2025</span>
+      <span class="made" data-i18n="made">Made with care & order</span>
+    </div>
+  </footer>
+
+  <script>
+    function textSpan(t){const s=document.createElement('span');s.className='logo-text';s.textContent=t;return s;}
+    const dict = {
+      en: {
+        nav_services: "Services",
+        nav_why: "Why us",
+        nav_contacts: "Contacts",
+        hero_title: "Wholesale and logistics solutions",
+        hero_sub: "Building distribution, optimizing logistics, ensuring payments and deal flow.",
+        cta: "Start cooperation",
+        services_title: "Our services",
+        s1_title: "Wholesale assortment & payment solutions",
+        s1_text: "Selection of assortment, terms and payment models for your market.",
+        s2_title: "Distribution & logistics",
+        s2_text: "Supply chain design, transport, customs and storage.",
+        s3_title: "Consulting & deal support",
+        s3_text: "Negotiations, contracts, quality control and long‑term management.",
+        partners_title: "Our partners",
+        partners_note: "Logos are used for reference to illustrate cooperation capabilities.",
+        kpi1: "On‑call support",
+        kpi2: "Objects in service",
+        kpi3: "Response time",
+        kpi4: "Processes & safety",
+        contact_title: "Write — we will calculate the cost",
+        f_name: "How to address you",
+        f_contact: "Phone or e‑mail",
+        f_task: "Brief about the task",
+        btn_send: "Send",
+        btn_email: "Write to e‑mail",
+        contacts_title: "Contacts",
+        phone: "Phone:",
+        city: "City:",
+        jur: "Legal details:",
+        made: "Made with care & order"
+      },
+      ru: {
+        nav_services: "Услуги",
+        nav_why: "Почему мы",
+        nav_contacts: "Контакты",
+        hero_title: "Оптовая торговля и логистические решения",
+        hero_sub: "Построение дистрибуции, оптимизация логистики, обеспечение платежей и сопровождение сделок.",
+        cta: "Начать сотрудничество",
+        services_title: "Наши услуги",
+        s1_title: "Оптовый ассортимент и платёжные решения",
+        s1_text: "Подбор ассортимента, условий и моделей оплаты под ваш рынок.",
+        s2_title: "Дистрибуция и логистика",
+        s2_text: "Проектирование цепочки поставок, транспорт, таможня, хранение.",
+        s3_title: "Консалтинг и сопровождение сделок",
+        s3_text: "Переговоры, договоры, контроль качества и долгосрочное ведение.",
+        partners_title: "Наши партнёры",
+        partners_note: "Логотипы используются для иллюстрации возможностей сотрудничества.",
+        kpi1: "Дежурная поддержка",
+        kpi2: "Объектов в обслуживании",
+        kpi3: "Время реакции",
+        kpi4: "Процессы и ТБ",
+        contact_title: "Напишите — рассчитаем стоимость",
+        f_name: "Как к вам обращаться",
+        f_contact: "Телефон или e‑mail",
+        f_task: "Кратко о задаче",
+        btn_send: "Отправить",
+        btn_email: "Написать на почту",
+        contacts_title: "Контакты",
+        phone: "Телефон:",
+        city: "Город:",
+        jur: "Юр. данные:",
+        made: "Сделано с порядком"
+      }
+    };
+    function setLang(lang){
+      document.querySelectorAll('[data-i18n]').forEach(el=>{
+        const key = el.getAttribute('data-i18n');
+        if(dict[lang][key]) el.textContent = dict[lang][key];
+      });
+      document.getElementById('lang-en').classList.toggle('active', lang==='en');
+      document.getElementById('lang-ru').classList.toggle('active', lang==='ru');
+      document.documentElement.lang = lang;
+      localStorage.setItem('lang', lang);
+    }
+    document.getElementById('lang-en').addEventListener('click', ()=>setLang('en'));
+    document.getElementById('lang-ru').addEventListener('click', ()=>setLang('ru'));
+    setLang(localStorage.getItem('lang') || 'en');
+  </script>
+</body>
+</html>
