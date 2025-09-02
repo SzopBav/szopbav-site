@@ -1,78 +1,159 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="en">
 <head>
-    <meta charset="UTF-8">
-    <title>SZOP B.A.V.</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/js/lang.js" defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Szop B.A.V. — Wholesale & Logistics</title>
+  <meta name="description" content="Wholesale and logistics solutions: distribution building, logistics, payments, deal support.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="img/logo.png">
+  <style>
+    /* Belarus ornament subtle divider duplicated for safety (also in CSS file) */
+  </style>
 </head>
 <body>
+  <div class="container">
     <header>
-        <img src="assets/images/logo.png" alt="Szop B.A.V. Logo" class="logo">
-        <h1>SZOP B.A.V.</h1>
-        <nav>
-            <ul>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#whyus">Why us</a></li>
-                <li><a href="#contacts">Contacts</a></li>
-            </ul>
-        </nav>
-        <div class="lang-switch">
-            <button onclick="setLang('en')">EN</button>
-            <button onclick="setLang('ru')">RU</button>
-        </div>
+      <div class="brand">
+        <img src="img/logo.png" alt="Szop B.A.V. logo">
+        <div class="name">SZOP B.A.V.</div>
+      </div>
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#why">Why us</a>
+        <a href="#contacts">Contacts</a>
+      </nav>
+      <div class="lang">
+        <button id="btn-en" class="active">EN</button>
+        <button id="btn-ru">RU</button>
+      </div>
     </header>
 
-    <section id="hero">
-        <h2 data-en="Wholesale and Logistics Solutions" data-ru="Оптовая торговля и логистические решения"></h2>
-        <p data-en="Building distribution, optimizing logistics, ensuring payments and deal flow." 
-           data-ru="Построение дистрибуции, оптимизация логистики, обеспечение платежей и сопровождение сделок."></p>
-        <button data-en="Start cooperation" data-ru="Начать сотрудничество"></button>
+    <section class="hero">
+      <div i18n="en">
+        <h1>WHOLESALE AND LOGISTICS SOLUTIONS</h1>
+        <p class="lead">Building distribution, optimizing logistics, ensuring payments and deal flow.</p>
+        <a class="cta" href="#contacts">Start cooperation</a>
+      </div>
+      <div i18n="ru">
+        <h1>ОПТОВАЯ ТОРГОВЛЯ И ЛОГИСТИЧЕСКИЕ РЕШЕНИЯ</h1>
+        <p class="lead">Построение дистрибуции, оптимизация логистики, обеспечение платежей и сопровождение сделок.</p>
+        <a class="cta" href="#contacts">Начать сотрудничество</a>
+      </div>
     </section>
 
     <div class="ornament"></div>
 
-    <section id="services">
+    <section id="services" class="section">
+      <div i18n="en">
+        <h2>Our services</h2>
+      </div>
+      <div i18n="ru">
+        <h2>Наши услуги</h2>
+      </div>
+      <div class="grid" style="margin-top:12px">
         <div class="card">
-            <h3 data-en="Wholesale assortment & payment solutions" data-ru="Оптовый ассортимент и платёжные решения"></h3>
-            <p data-en="Assortment selection, payment terms and models." 
-               data-ru="Подбор ассортимента, условий и моделей оплаты."></p>
+          <div i18n="en">
+            <h3>Wholesale assortment & payment solutions</h3>
+            <p>Selection of assortment, terms and payment models for your market.</p>
+          </div>
+          <div i18n="ru">
+            <h3>Оптовый ассортимент и платёжные решения</h3>
+            <p>Подбор ассортимента, условий и моделей оплаты под ваш рынок.</p>
+          </div>
         </div>
         <div class="card">
-            <h3 data-en="Distribution & logistics" data-ru="Дистрибуция и логистика"></h3>
-            <p data-en="Supply chain design, transport, customs, warehousing." 
-               data-ru="Проектирование цепочки поставок, транспорт, таможня, хранение."></p>
+          <div i18n="en">
+            <h3>Distribution & logistics</h3>
+            <p>Supply chain design, transport, customs and storage.</p>
+          </div>
+          <div i18n="ru">
+            <h3>Дистрибуция и логистика</h3>
+            <p>Проектирование цепочки поставок, транспорт, таможня, хранение.</p>
+          </div>
         </div>
         <div class="card">
-            <h3 data-en="Consulting & deal support" data-ru="Консалтинг и сопровождение сделок"></h3>
-            <p data-en="Negotiations, contracts, quality control, long-term support." 
-               data-ru="Переговоры, договоры, контроль качества, долгосрочное ведение."></p>
+          <div i18n="en">
+            <h3>Consulting & deal support</h3>
+            <p>Negotiations, contracts, quality control and long-term management.</p>
+          </div>
+          <div i18n="ru">
+            <h3>Консалтинг и сопровождение сделок</h3>
+            <p>Переговоры, договоры, контроль качества и долгосрочное ведение.</p>
+          </div>
         </div>
+      </div>
     </section>
 
-    <section id="partners">
-        <h2>Our Partners</h2>
-        <div class="logos">
-            <p data-en="Logos are used for reference to illustrate cooperation capabilities." 
-               data-ru="Логотипы используются для иллюстрации возможностей сотрудничества."></p>
+    <section class="section" id="partners">
+      <div i18n="en"><h2>Our partners</h2></div>
+      <div i18n="ru"><h2>Наши партнёры</h2></div>
+      <div class="partners" style="margin-top:12px">
+        <div class="partner"><img src="img/rodriguez.jpg" alt="Rodriguez Jamones"></div>
+        <div class="partner"><img src="img/wyke-farms.jpg" alt="Wyke Farms"></div>
+        <div class="partner"><img src="img/fiorucci.png" alt="Fiorucci Foods"></div>
+        <div class="partner"><img src="img/elpozo.jpg" alt="ElPozo"></div>
+      </div>
+      <div class="muted">
+        <div i18n="en">Logos are used for reference to illustrate cooperation capabilities.</div>
+        <div i18n="ru">Логотипы используются для иллюстрации возможностей сотрудничества.</div>
+      </div>
+    </section>
+
+    <div class="ornament"></div>
+
+    <section class="section" id="why">
+      <div i18n="en">
+        <h2>Why us</h2>
+        <p>We work officially with transparent processes, documentation and compliance. Focus on B2B supply and long-term relations.</p>
+      </div>
+      <div i18n="ru">
+        <h2>Почему мы</h2>
+        <p>Работаем официально: прозрачные процессы, документы и комплаенс. Фокус на B2B поставках и долгосрочных отношениях.</p>
+      </div>
+    </section>
+
+    <section class="section" id="contacts">
+      <div i18n="en"><h2>Contacts</h2></div>
+      <div i18n="ru"><h2>Контакты</h2></div>
+      <div class="grid" style="grid-template-columns:2fr 1fr">
+        <div class="card">
+          <p><strong>Email:</strong> <a href="mailto:info@szopbav.com">info@szopbav.com</a></p>
+          <p><strong>Phone:</strong> +48 732 979 624</p>
+          <p><strong>Address:</strong> Polska, Gdynia, ul. Starowiejska 16/2, 81-356</p>
         </div>
-    </section>
-
-    <section id="whyus">
-        <p data-en="We work officially with transparent processes, documentation and compliance. Focus on B2B supply and long-term relations." 
-           data-ru="Работаем официально: прозрачные процессы, документы и комплаенс. Фокус на B2B поставках и долгосрочных отношениях."></p>
-    </section>
-
-    <section id="contacts">
-        <p>Email: info@szopbav.com</p>
-        <p>Phone: +48 732 979 624</p>
-        <p>Address: Polska, Gdynia, ul. Starowiejska 16/2, 81-356</p>
-        <p>Szop B.A.V. NIP: 9581733742 REGON: 525313391</p>
+        <div class="card">
+          <div i18n="en">
+            <strong>Legal info</strong>
+            <p>Szop B.A.V.<br>NIP: 9581733742<br>REGON: 525313391</p>
+          </div>
+          <div i18n="ru">
+            <strong>Юр. данные</strong>
+            <p>Szop B.A.V.<br>NIP: 9581733742<br>REGON: 525313391</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <footer>
-        <p>© Szop B.A.V., 2025</p>
-        <p>Made with care. Belarusian ornament details in red & white.</p>
+      <div class="small">© Szop B.A.V., 2025 • <span i18n="en">Made with care. Belarusian ornament details in red & white.</span><span i18n="ru">Сделано с заботой. Белорусский орнамент в красно-белых деталях.</span></div>
     </footer>
+  </div>
+
+<script>
+  const root = document.documentElement;
+  const btnEn = document.getElementById('btn-en');
+  const btnRu = document.getElementById('btn-ru');
+  function setLang(lang){
+    root.classList.remove('en','ru');
+    root.classList.add(lang);
+    btnEn.classList.toggle('active', lang==='en');
+    btnRu.classList.toggle('active', lang==='ru');
+  }
+  btnEn.addEventListener('click',()=>setLang('en'));
+  btnRu.addEventListener('click',()=>setLang('ru'));
+  setLang('en');
+</script>
 </body>
 </html>
