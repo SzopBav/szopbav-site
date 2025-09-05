@@ -1,143 +1,103 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Szop B.A.V. — Wholesale & Logistics</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Cinzel:wght@700&display=swap" rel="stylesheet">
-  <style>
-    :root{
-      --bg:#ffffff;
-      --ink:#111827;
-      --muted:#6b7280;
-      --line:#e5e7eb;
-      --red:#c52228; /* hero red */
-    }
-    *{box-sizing:border-box;margin:0;padding:0}
-    body{font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;background:var(--bg);color:var(--ink)}
-    .container{max-width:1120px;margin:0 auto;padding:0 24px}
-    header{position:sticky;top:0;background:#fff;z-index:20;border-bottom:1px solid var(--line)}
-    .nav{height:64px;display:flex;align-items:center;justify-content:space-between}
-    .brand{display:flex;align-items:center;gap:12px}
-    .brand img{height:36px;width:auto;filter: invert(1) grayscale(1) contrast(1.1) brightness(0.25);} /* invert to make dark on white */
-    nav a{font-weight:600;color:var(--ink);text-decoration:none;margin-left:28px;font-size:14px;opacity:.85}
-    nav a:hover{opacity:1}
-    .lang{font-weight:700;opacity:.9}
-    .lang a{color:var(--ink);text-decoration:none;margin-left:10px}
-    /* hero */
-    .hero{background:var(--red);color:#fff;padding:72px 0 40px}
-    .hero .container{max-width:980px}
-    .hero h1{font-family:Cinzel,serif;font-size:48px;line-height:1.1;margin-bottom:14px}
-    .hero p{font-size:18px;color:#fff;opacity:.95;max-width:680px;margin-bottom:20px}
-    .btn{display:inline-block;background:#fff;color:#111;padding:12px 18px;border-radius:8px;text-decoration:none;font-weight:700}
-    /* ornament: crisp red-on-white diamonds */
-    .orn{height:28px;background:#fff url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 56"><rect width="960" height="56" fill="white"/><g fill="%23c52228"><path d='M22 28 l 20 -20 20 20 -20 20 z'/><path d='M62 28 l 20 -20 20 20 -20 20 z'/><path d='M102 28 l 20 -20 20 20 -20 20 z'/><path d='M142 28 l 20 -20 20 20 -20 20 z'/><path d='M182 28 l 20 -20 20 20 -20 20 z'/><path d='M222 28 l 20 -20 20 20 -20 20 z'/><path d='M262 28 l 20 -20 20 20 -20 20 z'/><path d='M302 28 l 20 -20 20 20 -20 20 z'/><path d='M342 28 l 20 -20 20 20 -20 20 z'/><path d='M382 28 l 20 -20 20 20 -20 20 z'/><path d='M422 28 l 20 -20 20 20 -20 20 z'/><path d='M462 28 l 20 -20 20 20 -20 20 z'/><path d='M502 28 l 20 -20 20 20 -20 20 z'/><path d='M542 28 l 20 -20 20 20 -20 20 z'/><path d='M582 28 l 20 -20 20 20 -20 20 z'/><path d='M622 28 l 20 -20 20 20 -20 20 z'/><path d='M662 28 l 20 -20 20 20 -20 20 z'/><path d='M702 28 l 20 -20 20 20 -20 20 z'/><path d='M742 28 l 20 -20 20 20 -20 20 z'/><path d='M782 28 l 20 -20 20 20 -20 20 z'/><path d='M822 28 l 20 -20 20 20 -20 20 z'/><path d='M862 28 l 20 -20 20 20 -20 20 z'/></g></svg>') no-repeat center/cover;border-bottom:1px solid var(--line)}
-    /* sections */
-    section{padding:56px 0}
-    h2{font-family:Cinzel,serif;font-size:32px;text-align:center;margin-bottom:24px}
-    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-    .card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px;box-shadow:0 10px 20px rgba(0,0,0,.04);text-align:center}
-    .card .icon{font-size:36px;color:#b91c1c;margin-bottom:10px}
-    .card h3{font-size:16px;margin-bottom:6px}
-    .card p{color:var(--muted);font-size:14px}
-    /* partners */
-    .partners{padding:56px 0 40px}
-    .logos{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;align-items:center}
-    .box{height:96px;border:1px solid var(--line);border-radius:12px;background:#fff;display:flex;align-items:center;justify-content:center;padding:12px;filter:grayscale(1) contrast(1) brightness(.9)}
-    .box img{max-width:100%;max-height:72px;object-fit:contain}
-    .note{color:var(--muted);text-align:center;font-size:12px;margin-top:8px}
-    /* two cols */
-    .two{display:grid;grid-template-columns:1fr 1fr;gap:24px;background:#f9fafb;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:40px 24px;border-radius:12px}
-    .left h3,.right h3{font-family:Cinzel,serif;font-size:24px;margin-bottom:10px}
-    .left p{color:var(--muted)}
-    .item{display:flex;gap:10px;margin-bottom:10px}
-    .item b{min-width:90px}
-    footer{color:var(--muted);text-align:center;padding:20px 0}
-    @media (max-width:960px){.cards{grid-template-columns:1fr} .logos{grid-template-columns:1fr 1fr} .two{grid-template-columns:1fr} .hero h1{font-size:36px}}
-  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SZOP B.A.V. — Wholesale & Logistics</title>
+  <meta name="description" content="Wholesale and Logistics Solutions. Distribution, optimizing logistics, ensuring payments and deal flow." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<header>
-  <div class="container nav">
-    <div class="brand">
-      <img src="assets/logo.png" alt="Szop emblem">
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">SZOP B. A. V.</div>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
-    <nav>
-      <a href="#services">Services</a>
-      <a href="#partners">Partners</a>
-      <a href="#why">Why Us</a>
-      <a href="#contacts">Contacts</a>
-      <span class="lang"><a href="#">EN</a> <a href="#">RU</a></span>
-    </nav>
-  </div>
-</header>
+  </header>
 
-<section class="hero">
-  <div class="container">
-    <h1>Wholesale and Logistics Solutions</h1>
-    <p>Building distribution, optimizing logistics, ensuring payments and deal flow.</p>
-    <a href="#contacts" class="btn">Start cooperation</a>
-  </div>
-</section>
-<div class="orn"></div>
-
-<section id="services">
-  <div class="container">
-    <h2>Our Services</h2>
-    <div class="cards">
-      <div class="card">
-        <div class="icon">📦</div>
-        <h3>Wholesale assortment &amp; payment solutions</h3>
-        <p>Selection of assortment, terms, and payment models.</p>
+  <section class="hero" id="top">
+    <div class="container hero-inner">
+      <div class="logo-wrap reveal">
+        <img src="assets/logo.png" alt="SZOP logo">
       </div>
-      <div class="card">
-        <div class="icon">🚚</div>
-        <h3>Distribution &amp; logistics</h3>
-        <p>Supply chain design, transport, customs, storage.</p>
+      <h1 class="reveal">Wholesale and Logistics Solutions</h1>
+      <p class="tagline reveal">Distribution, optimizing logistics, ensuring payments and deal flow</p>
+      <div class="down-indicator" aria-hidden="true">▼</div>
+    </div>
+  </section>
+
+  <section class="projects" id="projects">
+    <div class="container">
+      <h2 class="section-title reveal">Our Services</h2>
+      <p class="section-subtitle reveal">distribution, optimizing logistics, ensuring payments and deal flow.</p>
+
+      <div class="cards">
+        <article class="card reveal">
+          <div class="card-media" aria-hidden="true"></div>
+          <h3>Wholesale assortment &amp; payment solutions</h3>
+          <p>From SKU sourcing to safe settlements for both sides of the deal.</p>
+          <a class="btn" href="#contact">View Project</a>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-media" aria-hidden="true"></div>
+          <h3>Distribution &amp; logistics</h3>
+          <p>EU warehousing, bonded routes, consolidated shipments, cold chain.</p>
+          <a class="btn" href="#contact">View Project</a>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-media" aria-hidden="true"></div>
+          <h3>Consulting &amp; deal support</h3>
+          <p>From compliance and excise to documentation, payments and partners.</p>
+          <a class="btn" href="#contact">View Project</a>
+        </article>
       </div>
-      <div class="card">
-        <div class="icon">🤝</div>
-        <h3>Consulting &amp; deal support</h3>
-        <p>Negotiations, contracts, quality control, long‑term management.</p>
+
+      <div class="partners">
+        <h3 class="partners-title reveal">Our Partners</h3>
+        <p class="partners-note reveal">Логотипы используются только для иллюстрации возможностей сотрудничества.</p>
+        <div class="partner-grid">
+          <img class="partner" src="assets/partners/rodriguez.svg" alt="Rodriguez Jamones">
+          <img class="partner" src="assets/partners/wyke.svg" alt="Wyke Farms">
+          <img class="partner" src="assets/partners/fiorucci.svg" alt="Fiorucci Foods">
+          <img class="partner" src="assets/partners/elpozo.svg" alt="ElPozo">
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="partners" class="partners">
-  <div class="container">
-    <h2>Our Partners</h2>
-    <div class="logos">
-      <div class="box"><img src="assets/partners/rodriguez.png" alt="Rodríguez"></div>
-      <div class="box"><img src="assets/partners/wyke-farms.jpg" alt="Wyke Farms"></div>
-      <div class="box"><img src="assets/partners/fiorucci.png" alt="Fiorucci"></div>
-      <div class="box"><img src="assets/partners/elpozo.png" alt="ElPozo"></div>
+  <section class="contact" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-left reveal">
+        <h2>CONTACT</h2>
+        <ul class="contact-list">
+          <li><strong>Address:</strong> Poland, Gdynia, Starowiejska 16/2, 81-356</li>
+          <li><strong>Phone:</strong> +48 732 979 624 (WhatsApp)</li>
+          <li><strong>Email:</strong> <a href="mailto:info@szopbav.com">info@szopbav.com</a></li>
+        </ul>
+      </div>
+      <div class="contact-right reveal">
+        <h2>Legal info</h2>
+        <ul class="contact-list">
+          <li><strong>Szop B.A.V.</strong></li>
+          <li><strong>NIP:</strong> 9581733742</li>
+          <li><strong>REGON:</strong> 525313391</li>
+        </ul>
+      </div>
     </div>
-    <div class="note">Logos are used for reference to illustrate cooperation capabilities.</div>
-  </div>
-</section>
+  </section>
 
-<section id="why">
-  <div class="container two">
-    <div class="left">
-      <h3>Why us</h3>
-      <p>We work officially with transparent processes, documentation and compliance. Focus on B2B supply and long-term relations.</p>
-    </div>
-    <div class="right" id="contacts">
-      <h3>Contacts</h3>
-      <div class="item"><b>Email:</b><span>info@szopbav.com</span></div>
-      <div class="item"><b>Phone:</b><span>+48 732 979 624</span></div>
-      <div class="item"><b>Address:</b><span>Poland, Gdynia, ul. Starowiejska 16/2, 81-356</span></div>
-      <div class="item"><b>Company:</b><span>Szop BAV — NIP 9581733742 • REGON 525313391</span></div>
-    </div>
-  </div>
-</section>
+  <footer class="site-footer">
+    <div class="container">THANKS FOR WATCHING!</div>
+  </footer>
 
-<footer>© <span id="y"></span> Szop B.A.V.</footer>
-
-<script>
-  // Fill year
-  document.getElementById('y').textContent = new Date().getFullYear();
-</script>
+  <script src="script.js"></script>
 </body>
 </html>
