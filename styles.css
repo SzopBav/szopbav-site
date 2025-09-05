@@ -1,4 +1,4 @@
-/* Minimalist dark one-page style — inline assets fix */
+/* Minimalist dark one-page style — inline logos */
 :root{
   --bg1:#0f1113;
   --bg2:#111418;
@@ -61,8 +61,9 @@ h1{font-size:clamp(28px,5vw,48px);letter-spacing:.02em;margin:22px 0 10px}
 .partners-title{font-size:1.25rem;margin:0 0 8px}
 .partners-note{color:var(--muted);font-size:.9rem;margin:0 0 16px}
 .partner-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;align-items:center}
-.partner-grid svg{max-width:100%;height:auto;filter:grayscale(100%) contrast(120%);opacity:.96;border:1px solid #2a2f37;border-radius:14px;background:#121418}
-.partner-grid svg:hover{opacity:1}
+.partner-card{display:flex;align-items:center;justify-content:center;background:#121418;border:1px solid #2a2f37;border-radius:14px;padding:14px;min-height:90px}
+.partner-logo{max-height:48px;max-width:100%;object-fit:contain;filter:grayscale(100%) contrast(115%);opacity:.95}
+.partner-logo:hover{opacity:1;filter:grayscale(0) contrast(105%)}
 
 /* Contact */
 .contact{padding:48px 0;border-top:1px solid var(--line)}
