@@ -1,4 +1,4 @@
-/* Minimalist dark one-page style — premium */
+/* Minimalist dark one-page style — inline assets fix */
 :root{
   --bg1:#0f1113;
   --bg2:#111418;
@@ -53,7 +53,6 @@ h1{font-size:clamp(28px,5vw,48px);letter-spacing:.02em;margin:22px 0 10px}
   linear-gradient(135deg, rgba(255,255,255,.04), transparent 40%),
   linear-gradient(180deg,#13161a,#0e1013); border:1px dashed #2a2f37; margin-bottom:14px;
   display:flex;align-items:center;justify-content:center}
-.card-media.themed .icon{width:64px;height:64px;opacity:.92}
 .card h3{margin:6px 0 8px}
 .card p{color:var(--muted);margin:0}
 
@@ -62,8 +61,8 @@ h1{font-size:clamp(28px,5vw,48px);letter-spacing:.02em;margin:22px 0 10px}
 .partners-title{font-size:1.25rem;margin:0 0 8px}
 .partners-note{color:var(--muted);font-size:.9rem;margin:0 0 16px}
 .partner-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;align-items:center}
-.partner{filter:grayscale(100%) contrast(120%);opacity:.96;max-height:76px;border:1px solid #2a2f37;border-radius:14px;background:#121418}
-.partner:hover{opacity:1}
+.partner-grid svg{max-width:100%;height:auto;filter:grayscale(100%) contrast(120%);opacity:.96;border:1px solid #2a2f37;border-radius:14px;background:#121418}
+.partner-grid svg:hover{opacity:1}
 
 /* Contact */
 .contact{padding:48px 0;border-top:1px solid var(--line)}
