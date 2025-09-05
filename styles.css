@@ -1,12 +1,10 @@
-/* Minimalist dark one-page style */
+/* Minimalist dark one-page style — premium */
 :root{
   --bg1:#0f1113;
   --bg2:#111418;
   --text:#f5f5f5;
   --muted:#c9c9c9;
-  --card:#171a1f;
   --line:#2a2f37;
-  --accent:#e5e7eb;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -33,10 +31,9 @@ nav a:hover{opacity:1}
 /* Hero */
 .hero{padding:96px 0 72px;background:linear-gradient(180deg,var(--bg2),transparent)}
 .hero-inner{display:flex;flex-direction:column;align-items:center;text-align:center}
-.logo-wrap img{width:min(160px,35vw);height:auto;filter:drop-shadow(0 8px 24px rgba(0,0,0,.45))}
+.logo-wrap img{width:min(200px,42vw);height:auto;filter:drop-shadow(0 8px 24px rgba(0,0,0,.45))}
 h1{font-size:clamp(28px,5vw,48px);letter-spacing:.02em;margin:22px 0 10px}
 .tagline{color:var(--muted);font-size:clamp(14px,2.2vw,18px);max-width:820px;margin:0 auto 6px}
-.down-indicator{margin-top:24px;opacity:.35}
 
 /* Sections */
 .section-title{font-size:clamp(22px,3.6vw,32px);margin:14px 0 8px}
@@ -54,22 +51,18 @@ h1{font-size:clamp(28px,5vw,48px);letter-spacing:.02em;margin:22px 0 10px}
 .card:hover{transform:translateY(-4px);box-shadow:0 16px 44px rgba(0,0,0,.45);border-color:#363c45}
 .card-media{height:140px;border-radius:12px;background:
   linear-gradient(135deg, rgba(255,255,255,.04), transparent 40%),
-  linear-gradient(180deg,#13161a,#0e1013); border:1px dashed #2a2f37; margin-bottom:14px}
+  linear-gradient(180deg,#13161a,#0e1013); border:1px dashed #2a2f37; margin-bottom:14px;
+  display:flex;align-items:center;justify-content:center}
+.card-media.themed .icon{width:64px;height:64px;opacity:.92}
 .card h3{margin:6px 0 8px}
-.card p{color:var(--muted);margin:0 0 14px}
-.btn{
-  display:inline-block; padding:10px 14px; border-radius:10px;
-  border:1px solid #323842; text-decoration:none; color:var(--text);
-  transition:background .2s ease, opacity .2s;
-}
-.btn:hover{background:#1d2128;opacity:.95}
+.card p{color:var(--muted);margin:0}
 
 /* Partners */
 .partners{margin-top:28px}
 .partners-title{font-size:1.25rem;margin:0 0 8px}
 .partners-note{color:var(--muted);font-size:.9rem;margin:0 0 16px}
 .partner-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;align-items:center}
-.partner{filter:grayscale(100%) contrast(120%);opacity:.9;max-height:70px}
+.partner{filter:grayscale(100%) contrast(120%);opacity:.96;max-height:76px;border:1px solid #2a2f37;border-radius:14px;background:#121418}
 .partner:hover{opacity:1}
 
 /* Contact */
@@ -82,7 +75,7 @@ h1{font-size:clamp(28px,5vw,48px);letter-spacing:.02em;margin:22px 0 10px}
 .contact a:hover{opacity:1}
 
 /* Footer */
-.site-footer{border-top:1px solid var(--line);padding:28px 0;margin-top:10px;text-align:center;color:var(--muted)}
+.site-footer{border-top:1px solid var(--line);padding:28px 0;margin-top:10px;text-align:center;color:#b6bbc3}
 
 /* Reveal on scroll */
 .reveal{opacity:0;transform:translateY(14px);transition:opacity .6s ease, transform .6s ease}
